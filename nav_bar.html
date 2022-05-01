@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reebok</title>
     <style>
-        #nav{
-            background-color: purple;
-            display: flex;
-            padding: 0px 30px 0px 30px;
-            justify-content: space-between;
-        }
-        h2{
-            color: aquamarine;
-            font-size: large;
-        }
-        a {
-            color: aquamarine;
+        * {
+            color: white;
             text-decoration: none;
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #navbar > #right {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
         }
     </style>
 </head>
 <body>
-    <div id="nav">
-        <h2>Reebok</h2>
-        <h2><a href="mens.html">Mens</a> </h2>
-        <h2>Womens</h2>
-        <h2><a href="login.html">Login</a></h2>
-        <h2>Signup</h2>
+    <div id="navbar">
+        <div id="left">Reebok</div>
+        <div id="right">
+            <div><a href="mens.html">Men</a> </div>
+            <div>Women</div>
+            <div><a href="login.html">Login</a></div>
+            <div>Signup</div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
